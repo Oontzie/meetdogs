@@ -1,74 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Meetdogs : Meet Local Dogs!" />
+<head>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-responsive.no-icons.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8">
+<style>p{margin-bottom: 2px;}</style><style type="text/css">
+</style>
+</head>
+<body id="body">
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js">
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-31376931-9']);_gaq.push(['_setDomainName', 'adultcatfinder.com']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="width:320px;height:30px;background-color:#22629E;color:white;font-size:15px;line-height:30px">
+<b><i>&nbsp;&nbsp;&nbsp;<a style="color:white" href="http://adultcatfinder.com" target="_blank">Adult Cat Finder</a></i></b><a style="color:white;font-weight:bold;margin-left:173px" href="#" onclick="document.getElementById('body').style.display='none';">×</a></div><div style="width:320px;height:400px;overflow:hidden;background-color:#f0f0f0"><img width="320" src="cat.gif"><div id="chat" style="width:314px;height:175px;margin-left:2px;margin-top:2px;resize:none;background:white;overflow:scroll;border: 1px solid #CCC;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;-moz-transition: border linear 0.2s, box-shadow linear 0.2s;-o-transition: border linear 0.2s, box-shadow linear 0.2s;transition: border linear 0.2s, box-shadow linear 0.2s;margin-bottom:5px;"><p style="color:blue">Local Cat: meow meow <i>meow</i>?</p></div><input id="chattext" type="text" style="margin-left:2px;width:242px;" onkeypress="handleKeyPress(event,this.form)"><button onclick="addNewText()" style="margin-top:-10px;" class="btn">Send</button></div><script>var i=0;window.setInterval(function(){var chat=document.getElementById("chat");if (i==0){chat.innerHTML +="<p style='color:blue'>Local Cat: meow meow <i>meow</i>?</p>";}else if (i==1){chat.innerHTML +="<p style='color:blue'>Local Cat: moew moew meow meow!!</p>";}else if (i==2){chat.innerHTML +="<p style='color:blue'>Local Cat: moew <b>moew meow</b> meow</p>";}else if (i==3){chat.innerHTML +="<p style='color:blue'>Local Cat: <i>moew</i> moew meow meow</p>";}else if (i==4){chat.innerHTML +="<p style='color:blue'>Local Cat: <a href='http://petfinder.com' target='_blank'>moew?! MEOW meow!?!? meow</a></p>";}else if (i==5){chat.innerHTML +="<p style='color:blue'>Local Cat: moew moew <b><i>meow</i></b> meow</p>";}else if (i==6){chat.innerHTML +="<p style='color:blue'>Local Cat: MEOW MEOW? meow meow</p>";}else if (i==7){chat.innerHTML +="<p style='color:blue'>Local Cat: moew moew!! <b>meow</b> meow</p>";}else if (i==7){chat.innerHTML +="<p style='color:blue'>Local Cat: moew moew meow MEOW!!</p>";}chat.scrollTop=chat.scrollHeight;i=i + 1;if (i>7) i=0;},3000);function addNewText(){var chat=document.getElementById("chat");var text=document.getElementById("chattext");chat.innerHTML +="<p style='color:red'>You: " + text.value + "</p>";text.value="";chat.scrollTop=chat.scrollHeight;}function handleKeyPress(e,form){var key=e.keyCode || e.which;if (key==13){addNewText();}}</script></body></html>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Meetdogs</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/OontzyPinata/meetdogs">View on GitHub</a>
-
-          <h1 id="project_title">Meetdogs</h1>
-          <h2 id="project_tagline">Meet Local Dogs!</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/OontzyPinata/meetdogs/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/OontzyPinata/meetdogs/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Meetdogs maintained by <a href="https://github.com/OontzyPinata">OontzyPinata</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
 </html>
